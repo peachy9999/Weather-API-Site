@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: #ADD8E6;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Heading */
+.heading h1 {
+    margin-top: -65%;
+    margin-left: 173%;
+    margin-right: 50%;
+    font-size: 46px;
+    font-weight: 750;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 450px;
+    height: 105px; /* 605px for full box */
+    background: #fff;
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    transition: 0.6s ease-out;
+    font-family: 'Roboto', sans-serif;
+}
+
+.weather-box img {
+    justify-content: center;
+    width: 200px;
+    margin-top: 60px;
+    transition: 0.6s ease-out;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box input{
+    color: #06283D;
+    width: 80%;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 32px;
+}
+
+.search-box input::placeholder{
+    font-size: 20px;
+    font-weight: 500;
+    color: #06283D;
+    text-transform: capitalize;
+}
+
+#clear {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: #06283D;
+    background: #dff6ff;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: 0.4s ease;
+}
+
+#search {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: #06283D;
+    background: #dff6ff;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: 0.4s ease;
+}
+
+.search-box button:hover{
+    color: #fff;
+    background: #06283D;
+}
+
+.search-box i{
+    position: absolute;
+    color: #06283D;
+    font-size: 28px;
+}
+
+.weather-box{
+    text-align: center;
+}
+
+.temp {
+    margin-top: 5px;
+    font-size: 55px;
+}
+
+.windspeed {
+    margin-right: 50%;
+    margin-top: 20%;
+    font-size: 24px;
+}
+
+.humidity {
+    margin-top: -6.9%;
+    margin-left: 50%;
+    font-size: 24px;
+}
+
+.windtext {
+    margin-right: 50%;
+    font-size: 18px;
+}
+
+.humiditytext {
+    margin-top: -5.4%;
+    margin-left: 50%;
+    font-size: 18px;
+}
+
+.fadeIn{
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn{
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.fadeOut{
+    animation: 0.5s fadeOut backwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeOut{
+    to {
+        scale: 0;
+        opacity: 0;
+    }
+}
